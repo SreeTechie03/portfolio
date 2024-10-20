@@ -1,39 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.querySelector('nav ul');
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
     const currentYearSpan = document.getElementById('currentYear');
-    const imageUpload = document.getElementById('imageUpload');
-    const profileImage = document.getElementById('profileImage');
 
     // Menu toggle
     menuToggle.addEventListener('click', () => {
         navList.classList.toggle('show');
     });
 
-    // Theme toggle
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
-        const isDarkTheme = body.classList.contains('dark-theme');
-        themeToggle.innerHTML = `<i data-lucide="${isDarkTheme ? 'sun' : 'moon'}"></i>`;
-        lucide.createIcons();
-    });
-
     // Set current year
     currentYearSpan.textContent = new Date().getFullYear();
-
-    // Image upload
-    imageUpload.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                profileImage.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    });
 
     // Experience data
     const experiences = [
@@ -43,14 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
             date: "June 2024",
             description: "Developed responsive web applications using HTML, CSS, and JavaScript, with a focus on enhancing user experience and optimizing performance."
         },
-        
         {
             title: "Hackathon Participant",
             company: "Aishwi Technologies & IBM",
             date: "April 2023",
             description: "Participated in a live hackathon on web development. Collaborated with team members to develop innovative solutions, and earned certifications for participation and performance."
         },
-
         {
             title: "Salesforce Developer Virtual Internship",
             company: 'Salesforce',
@@ -58,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Gained expertise in Salesforce tools, data handling, and automation, focusing on driving customer satisfaction and improving operational efficiency across various business environments."
         },
     ];
-    
 
     // Render experience timeline
     const experienceContainer = document.getElementById('experienceContainer');
@@ -70,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>${exp.title}</h3>
                 <h4>${exp.company}</h4>
                 <p>${exp.date}</p>
-                
+                <p>${exp.description}</p>
             </div>
         `;
         experienceContainer.appendChild(expEl);
@@ -117,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Created an online ticket booking system featuring user sign-up, login, and ticket booking functionalities. Includes a responsive interface for easy movie selection and booking.',
             link: "https://sreetechie03.github.io/movie-ticket-booking/21121A3243/Movie%20Ticket%20Booking.html"
         }
-        
     ];
 
     // Render projects
