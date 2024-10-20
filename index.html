@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreedhar Padigala - Interactive Portfolio</title>
+    <title>Sreedhar Padigala</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="online-resume-icon.png">
+    <!-- Load Lucide icons correctly -->
+    <script src="https://unpkg.com/lucide"></script> <!-- Stable version -->
 </head>
-<body>
+<body class="dark-theme">
     <header>
         <div class="container">
             <h1>Sreedhar Padigala</h1>
@@ -33,11 +35,7 @@
             <h2>About Me</h2>
             <div class="profile-container">
                 <div class="profile-image-container">
-                    <img id="profileImage" src="https://source.unsplash.com/random/150x150/?portrait" alt="Profile Picture">
-                    <label for="imageUpload" class="image-upload-label">
-                        <i data-lucide="camera"></i>
-                    </label>
-                    <input type="file" id="imageUpload" accept="image/*" class="hidden">
+                    <img id="profileImage" src="pic.png" alt="Profile Picture">
                 </div>
                 <h3>PADIGALA VENKATA SREEDHAR</h3>
                 <p>+91 6281544893 | sreedharpadigela222@gmail.com</p>
@@ -110,10 +108,6 @@
             <p>&copy; <span id="currentYear"></span> Sreedhar Padigala. All rights reserved.</p>
         </div>
     </footer>
-
-    <button id="themeToggle" aria-label="Toggle theme">
-        <i data-lucide="sun"></i>
-    </button>
 
     <script src="script.js"></script>
 </body>
