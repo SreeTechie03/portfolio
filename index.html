@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreedhar Padigala</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="online-resume-icon.png">
+    <!-- Load Lucide icons correctly -->
+    <script src="https://unpkg.com/lucide"></script> <!-- Stable version -->
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <h1>Sreedhar Padigala</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile-container">
+                <div class="profile-image-container">
+                    <img id="profileImage" src="pic.png" alt="Profile Picture">
+                </div>
+                <h3>PADIGALA VENKATA SREEDHAR</h3>
+                <p>+91 6281544893 | sreedharpadigela222@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sreedhar-padigala-572980267/" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/SreeTechie03" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/Sreedhar003/" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="code"></i>
+                        <span class="sr-only">LeetCode</span>
+                    </a>
+                </div>
+                <p class="bio">
+                    As a BTech student with strong skills in Data Science, Python, SQL, web development, and machine learning, I have gained 
+                    practical experience through internships, hackathons, and certifications. I'm passionate about applying technical knowledge 
+                    to real-world problems and have developed projects like a movie streaming website, movie ticket booking website, and 
+                    predictive tools.
+                </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Sree Vidyanikethan Engineering College, Tirupati</h3>
+                <p>Bachelor of Technology, Computer Science and Engineering in Data Science</p>
+                <p>2021 – 2025</p>
+                <p><strong>CGPA – 7.91</strong></p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div id="experienceContainer" class="timeline"></div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div id="skillsContainer" class="skills-grid"></div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="projectsContainer" class="projects-grid"></div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div id="certificationsContainer" class="certifications-list"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Sreedhar Padigala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
